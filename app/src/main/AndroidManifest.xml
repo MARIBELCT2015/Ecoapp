@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Conciencia_ecologica"
+        tools:targetApi="31">
+        <activity
+            android:name=".Marketplace"
+            android:exported="false" />
+        <activity
+            android:name=".olvidaste_contrasena"
+            android:exported="false" />
+        <activity
+            android:name=".biodiversidad81"
+            android:exported="false" />
+        <activity
+            android:name=".investigar_energias_renovables71"
+            android:exported="false" />
+        <activity
+            android:name=".aprender_agua61"
+            android:exported="false" />
+        <activity
+            android:name=".conservacion_agua_6_1"
+            android:exported="false" />
+        <activity
+            android:name=".Cambio_climatico4_1"
+            android:exported="false" />
+        <activity
+            android:name=".Intro_3"
+            android:exported="false" />
+        <activity
+            android:name=".Intro_2"
+            android:exported="false" />
+        <activity
+            android:name=".Intro_1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Agricultura_sostenible"
+            android:exported="false" />
+        <activity
+            android:name=".Consumo_Responsable10"
+            android:exported="false" />
+        <activity
+            android:name=".Movilidad_Sostenible9"
+            android:exported="false" />
+        <activity
+            android:name=".Biodiversidad8"
+            android:exported="false" />
+        <activity
+            android:name=".Energias_Renovables7"
+            android:exported="false" />
+        <activity
+            android:name=".Conservacion_Agua6"
+            android:exported="false" />
+        <activity
+            android:name=".Reciclaje5"
+            android:exported="false" />
+        <activity
+            android:name=".CambioClimatico4"
+            android:exported="false" />
+        <activity
+            android:name=".Menu3"
+            android:exported="false" />
+        <activity
+            android:name=".Registro_usuario2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="aquamarine">#037a8b</color>
+    <color name="green">#2fa388</color>
+    <color name="darkaquamarine">#035056</color>
+    <color name="greenlemon">#a1c142</color>
+    <color name="gray">#565454</color>
+    <color name="transparente">#F4F4F4</color>
+    <color name="lightgray">#D0CCCC</color>
+
+</resources>

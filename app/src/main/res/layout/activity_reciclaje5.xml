@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Reciclaje5">
+
+
+    <ImageView
+        android:id="@+id/imageBefore"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparente"
+        android:contentDescription="@string/volver_atras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/navigate_before" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="268dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/logo_ecoapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageBefore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_ecoapp" />
+
+    <TextView
+        android:id="@+id/tituloReciclaje"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/reciclaje_title"
+        android:textColor="@color/green"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/textViewReciclaje"
+        android:layout_width="316dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/fomentamos"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloReciclaje" />
+
+
+    <Button
+        android:id="@+id/buttonPlastico"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#06ABB8"
+        android:hint="@string/plastico"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/greenlemon"
+        android:textSize="20sp"
+        app:cornerRadius="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReciclaje" />
+
+    <Button
+        android:id="@+id/buttonPapelCarton"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/green"
+        android:hint="@string/papel"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/greenlemon"
+        android:textSize="20sp"
+        app:cornerRadius="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPlastico"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReciclaje" />
+
+    <Button
+        android:id="@+id/buttonElectronicos"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/greenlemon"
+        android:hint="@string/electronicos"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/greenlemon"
+        android:textSize="20sp"
+        app:cornerRadius="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPapel"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPapelCarton" />
+
+    <Button
+        android:id="@+id/buttonPapel"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#25B493"
+        android:hint="@string/ropa"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/greenlemon"
+        android:textSize="20sp"
+        app:cornerRadius="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlastico" />
+
+    <Button
+        android:id="@+id/buttonAceite"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/green"
+        android:hint="@string/aceite"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/greenlemon"
+        android:textSize="20sp"
+        app:cornerRadius="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMuebles"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonElectronicos" />
+
+    <Button
+        android:id="@+id/buttonMuebles"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/aquamarine"
+        android:hint="@string/muebles"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/greenlemon"
+        android:textSize="20sp"
+        app:cornerRadius="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPapel" />
+
+    <ImageView
+        android:id="@+id/imageViewReciclando"
+        android:layout_width="338dp"
+        android:layout_height="230dp"
+        android:contentDescription="@string/personas_separando"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAceite"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/reciclando" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

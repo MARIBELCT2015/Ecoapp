@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".aprender_agua61">
+
+    <ImageView
+        android:id="@+id/imageBefore"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparente"
+        android:contentDescription="@string/volver_atras"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/navigate_before" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="268dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_ecoapp" />
+
+    <TextView
+        android:id="@+id/TituloConservacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/conservacion_agua"
+        android:textColor="@color/green"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/textViewPregunta"
+        android:layout_width="376dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/acciones"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewParrafo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloConservacion"
+        app:srcCompat="@drawable/agua" />
+
+    <TextView
+        android:id="@+id/textViewParrafo"
+        android:layout_width="367dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/cuidar_agua"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupPreguntas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPregunta">
+
+        <RadioButton
+            android:id="@+id/radioButtonCepillas"
+            android:layout_width="299dp"
+            android:layout_height="63dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/black"
+            android:text="@string/dejar_correr"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDuchas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/black"
+            android:text="@string/tomar_duchas"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonManguera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/black"
+            android:text="@string/lavar_el_auto"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGoteras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/black"
+            android:text="@string/reparar_goteras"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="320dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/aquamarine"
+        android:drawableEnd="@drawable/vector_navigate_next_white"
+        android:hint="@string/enviar"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RadioGroupPreguntas"
+        app:layout_constraintVertical_bias="0.242" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
